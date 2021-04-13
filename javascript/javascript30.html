@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <script>
+        //fot문을 이용해서 1~10까지 출력
+        for( let i=1; i<=10; i++ ){
+            document.write(i,"<br>");
+        }
+        document.write("<br><br>");
+
+        //for문안의 for문사용(중첩for문)
+        for( let i=1; i<=10; i++){
+            for(let j=1; j<=10; j++){
+                document.write(i,j,"<br>");
+            }
+        }
+        
+        //구구단 만들기
+        // i= 2~9  j = 1~9   i*j = sum
+        for ( let i=2; i<=9; i++){
+            for( let j=1; j<=9; j++){
+                let sum = i * j 
+                document.write(i + "*" + j + "=" + sum);
+                document.write("<br>");
+            }
+        }
+
+        //중첩for문을 이용해서 실무에서 쓰는 방법 ->javascript31으로 이동함 
+        //table사용 맨위쪽에있음 
+        
+    </script>
+</body>
+</html>

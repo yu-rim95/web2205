@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "GmarketSansMedium";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "GmarketSansLight";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "GmarketSansBold";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #e5e5e5;
+      }
+      #wrap {
+      }
+      #header {
+        height: 100px;
+        border-bottom: 2px solid #7b7b7b;
+      }
+      .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        width: 98%;
+      }
+      #header {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      #header .container {
+        justify-content: space-between;
+        display: flex;
+        padding-top: 65px;
+      }
+      #header h2 {
+        font-family: "GmarketSansMedium";
+        font-size: 24px;
+      }
+      #header p {
+        font-family: "GmarketSansLight";
+        font-size: 24px;
+      }
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      #main .text {
+        margin-top: 100px;
+        line-height: 1.2;
+        font-size: 8vw;
+        text-align: center;
+        font-family: "GmarketSansBold";
+      }
+      #main .text span {
+        display: block;
+        font-family: "GmarketSansMedium";
+      }
+      #main .text strong {
+        display: block;
+        color: #63d77d;
+      }
+      #main .class {
+        text-align: center;
+        margin-top: 5vh;
+        padding: 0 20%;
+      }
+      #main .class a {
+        text-decoration: none;
+        color: #7b7b7b;
+        border: 1px solid #7b7b7b;
+        border-radius: 50px;
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: 2.4;
+      }
+      #main .class a:hover {
+        background: #000;
+        color: #fff;
+        border-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <h2>제이쿼리</h2>
+          <p>최유림</p>
+        </div>
+      </header>
+      <main id="main">
+        <section class="content">
+          <div class="text">
+            <span>happy</span>
+            <strong>jQuery</strong>
+            <span>class</span>
+          </div>
+          <div class="class">
+            <a href="jquery05_attr.html">.attr()</a>
+            <a href="jquery06_addClass.html">.addClass()</a>
+            <a href="jquery07_css.html">.css()</a>
+            <a href="jquery08_append.html">.append()</a>
+            <a href="jquery09_animation.html">animate()</a>
+            <a href="jquery10_animation.html">.animate()</a>
+            <a href="jquery11_dimensions.html">demension</a>
+            <a href="jquery12_offset.html">.offset()</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body{
+            padding: 30px;
+        }
+        li{
+            margin: 5px;
+            padding: 5px;
+            color: #c7354e;
+        }
+        a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>jqurey 선택자</h1>
+    <div id="list1" class="list">
+        <ul>
+            <li class="list01"><a hret = "https://www.naver.com">list01</a></li>
+            <li class="list02"><a hret = "https://www.daum.net">list02</a></li>
+            <li class="list03"></li>
+            <li class="list04">list04</li>
+            <li class="list05">list05</li>
+            <li class="list06">list06</li>
+            <li class="list07">list07</li>
+            <li class="list08">list08</li>
+            <li class="list09">list09</li>
+            <li class="list10">list10
+                <ul>
+                    <li class="list10-1">list10-1</li>
+                    <li class="list10-2">list10-2</li>
+                    <li class="list10-3">list10-3</li>
+                    <li class="list10-4">list10-4</li>
+                    <li class="list10-5">list10-5</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="list2" class="list">
+        <ul>
+            <li class="list01">list01</li>
+            <li class="list02">list02</li>
+            <li class="list03">list03</li>
+            <li class="list04">list04</li>
+            <li class="list05">list05</li>
+            <li class="list06">list06</li>
+            <li class="list07">list07</li>
+            <li class="list08">list08</li>
+            <li class="list09">list09</li>
+            <li class="list10">list10
+                <ul>
+                    <li class="list10-1">list10-1</li>
+                    <li class="list10-2">list10-2</li>
+                    <li class="list10-3">list10-3</li>
+                    <li class="list10-4">list10-4</li>
+                    <li class="list10-5">list10-5</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="list3" class="list">
+        <ul>
+            <li class="list01">list01</li>
+            <li class="list02">list02</li>
+            <li class="list03">list03</li>
+            <li class="list04">list04</li>
+            <li class="list05">list05</li>
+            <li class="list06">list06</li>
+            <li class="list07">list07</li>
+            <li class="list08">list08</li>
+            <li class="list09">list09</li>
+            <li class="list10">list10
+                <ul>
+                    <li class="list10-1">list10-1</li>
+                    <li class="list10-2">list10-2</li>
+                    <li class="list10-3">list10-3</li>
+                    <li class="list10-4">list10-4</li>
+                    <li class="list10-5">list10-5</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+     <!---script---->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script>
+    $(document).ready(function(){
+         //기본 선택자
+            //$("li").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //요소 선택자
+            //$("*").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //전체 선택자
+            //$("#list3").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //아이디 선택자
+            //$(".list").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //클래스 선택자
+            //$(".list7,.list1,.list3").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //그룹 선택자
+       
+
+
+      //계층 선택자
+            //$("div ul").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //모든자식 요소를 선택
+            //$("div > ul").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //첫번째 자식요소만 선택
+            //$(".list5 + li").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //선택한 요소의 다음 형제 요소를 선택
+            //$(".list5 ~ li").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 다음 형제 요소를 모두 선택
+
+            //$("#list1").parent().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //부모한테 효과를 줘라 
+            //$(".list01").parents().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 모든 부모 요소를 선택
+            //$(".list10").children().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 모든 자식 요소를  선택
+            //$(".list05").prev().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //선택한 요소의 형제(이전) 요소를 선 택
+            //$(".list05").prevAll().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 형제(이)들 요소를 선 택
+            //$(".list05").next().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //선택한 요소의 형제(다음) 요소를 선택
+            //$(".list05").nextAll ().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 형제(다음)들 요소를 선 택
+            //$(".list05").siblings().css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); //선택한 요소의 모든 형제들 요소를 선 택
+
+
+            //속성 선택자
+            //$("li[class]").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); 
+            //$("li[class='list09']").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});   //class중에 list9번만 나오게하기 //작은 따움표사용
+            //$("li a[hret^='http']").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //인라인구조이기때문에 글씨영역만 불이들어옴그래서 위에 a태그넣고 블록구조로 바꿔줌 
+            //$("li a[hret$='com']").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});   //^표시는 http로 시작되는거 %는 com으로 끝나는거
+           // $("li a[hret*='naver']").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});  //*표시는 단어를 포함하는거 찾기 
+
+
+           //기본 필터 선택자
+            //$("li:eq(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:lt(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:gt(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:first(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"}); 
+            //$("li:last(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:odd(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:even(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:not(4)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+
+ 
+          //내용 필터 선택자
+            //$("li:contains(list02)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+           // $("li:empty").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:parent").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+            //$("li:has(ul)").css({"border":"1px dashed #a51a3d","background":"#f9f2f4"});
+
+
+    $("li:first").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:first-child").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:last").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:last-child").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:nth-child(4)").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:nth-child(4n)").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:nth-child(2n+1)").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:nth-child(odd)").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:nth-child(even)").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+    $("li:only-child").css({backgroundColor:"#bbdefb", border:"1px dashed #303f9f", color:"#fff"});
+
+
+    });
+     </script>
+
+</body>
+</html> 

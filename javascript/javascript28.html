@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        let num = 1;
+        while(num <= 10){
+            document.write(num,"<br>");
+            num++;
+        }
+        document.write("<br><br>");
+
+        //1부터 10까지 출력(짝수)
+        let num2 = 1;
+        while(num2 <= 10){
+            //여기까지는 1,2,3,4,5,6,7,8,9,10출력
+            if (num2 % 2 == 0 ){
+                document.write(num2,"<br>");
+            }
+            num2++  //증감식을 안넣으면 무한로딩에걸림
+        }
+        document.write("<br><br>");
+
+        //1부터10까지출력(4의배수만)
+        let num3 = 1;
+        while(num3 <= 10){
+            if(num3 % 4 == 0){
+                document.write(num3,"<br>");
+            }
+            num3++;
+        }
+        document.write("<br><br>");
+
+        //1부터100까지 출력(짝수는 파란색으로 홀수는 빨간색)
+        let num4 = 1;
+        while(num4 <= 100){
+            if(num4 % 2 == 0){
+                document.write("<span style = 'color: blue'>" + num4 + "</span>" ,"<br>");
+            } else{
+                document.write("<span style = 'color: red'>" + num4 + "</span>" ,"<br>");
+            }    //""쓰면 중복사용불가능해서 ''사용 했음 
+                 // <span></span> = 글씨태그 바로옆에 style넣고 색상넣기가능
+            num4++;
+        }
+    </script>
+</body>
+</html>
